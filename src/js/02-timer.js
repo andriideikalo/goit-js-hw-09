@@ -54,15 +54,17 @@ const options = {
 
             return { days, hours, minutes, seconds };
         }
-
+        let timerId = null;
         // console.log(convertMs(ms)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
         refs.btnStart.addEventListener('click', () => {
             // console.log(convertMs(ms)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
 
-            setInterval(() => {
+            timerId = setInterval(() => {
                 const ms = selectedDates[0] - new Date();
 
-                if (ms <= 0) {
+                if (ms < 0) {
+                    clearInterval(timerId);
+                    Notiflix.Notify.success('Time is over!');
                     return;
                 }
                 const { days, hours, minutes, seconds } = convertMs(ms);
