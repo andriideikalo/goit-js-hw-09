@@ -2,20 +2,20 @@
     "name": "parcel-project-template",
     "version": "2.0.0",
     "description": "",
-    "homepage": "https://andriideikalo.github.io/goit-js-hw-09",
+    "homepage": "https://andriideikal.github.io/goit-js-hw-09",
     "scripts": {
         "start": "parcel src/*.html",
         "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/andriideikalo/goit-js-hw-09.git"
+        "url": "git+https://github.com/andriideikal/goit-js-hw-09.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/andriideikalo/goit-js-hw-09.git/issues"
+        "url": "https://github.com/goitacademy/goit-js-hw-09.git/issues"
     },
     "dependencies": {
         "flatpickr": "^4.6.13",
