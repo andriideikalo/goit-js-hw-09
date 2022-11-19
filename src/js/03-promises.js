@@ -21,13 +21,12 @@ refs.form.addEventListener('submit', (evt) => {
     const step = +evt.currentTarget.step.value;
     const amount = +evt.currentTarget.amount.value;
 
-
     // console.log(Number(delay))
     // console.log(Number(step))
     // console.log(Number(delay) + Number(step))
     // console.log(createPromise)
 
-    for (let i = 1; i < amount; i += 1) {
+    for (let i = 0; i < amount; i += 1) {
         delay += step
         createPromise(i, delay)
     }
